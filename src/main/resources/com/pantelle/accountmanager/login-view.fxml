@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pantelle.accountmanager.LogInController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@images/grey_background.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#000000b2" height="300.0" layoutX="175.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+      <ImageView fitHeight="45.0" fitWidth="150.0" layoutX="225.0" layoutY="75.0">
+         <image>
+            <Image url="@images/x10/Long%20Logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="loginButton" layoutX="244.0" layoutY="295.0" prefHeight="29.0" prefWidth="113.0" style="-fx-background-color: #275DAD;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="515.0" layoutY="378.0" text="Version: 0.0.1" textFill="#275dad" />
+      <TextField fx:id="usernameField" layoutX="226.0" layoutY="155.0" promptText="Username" style="-fx-background-color: #000000b2; -fx-prompt-text-fill: #3e7cb1; -fx-text-fill: #3e7cb1;" />
+      <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="220.0" promptText="Password" style="-fx-background-color: #000000b2; -fx-prompt-text-fill: #3e7cb1; -fx-text-fill: #3e7cb1;" />
+   </children>
+</AnchorPane>
